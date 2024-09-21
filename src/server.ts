@@ -24,6 +24,8 @@ process.on('unhandledRejection', (error) => {
   }
 });
 
+// mongodb connection
+
 async function bootstrap() {
   try {
     await mongoose.connect(config.db_url as string);
